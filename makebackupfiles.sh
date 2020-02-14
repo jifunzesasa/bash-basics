@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # make copies of all files in a directory
-LIST=`ls`
+LIST=$(ls)
 for i in $LIST; do
-ORIG=$i
-DEST=$i.old
-cp $ORIG $DEST
-echo "copied $i"
+    ORIG=$i
+    DEST=$i.old
+    cp $ORIG $DEST
+    echo "copied $i"
 done

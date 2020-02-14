@@ -1,7 +1,10 @@
 #!/bin/sh
-DATE=`date`
+DATE=$(date)
 echo "Date is $DATE"
-USERS=`who | wc -l`
+USERS=$(who | wc -l)
 echo "Logged in user are $USERS"
-UP=`date ; uptime`
+UP=$(
+    date
+    uptime
+)
 echo "Uptime is $UP"
